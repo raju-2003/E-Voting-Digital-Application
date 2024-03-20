@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting</title>
+    <style>
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 60%;
+     
+       }
+      
+* {
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+ 
+header {
+    background-color: hsl(27, 89%, 50%);
+    padding: 1rem;
+    text-align: center;
+}
+ 
+main {
+    padding: 2rem;
+}
+ 
+form {
+    margin: 0 auto;
+    width: 20rem;
+}
+ 
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+ 
+input[type="text"],
+input[type="password"] {
+    border: 1px solid #ccc;
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+}
+ 
+button {
+    background-color: #f0c310;
+   
+   
+}
+footer {
+    background-color:#0d6b0c;
+    color: #080808;
+    text-align: center;
+    padding: 30px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+ 
+       
+    </style>
+</head>
+<body>
+    <header>
+        <table>
+            <tr>
+                <td><img src="https://static.wixstatic.com/media/843f89_5b80d59741b844efa802503757147ceb~mv2.png/v1/fit/w_727,h_194,q_90/843f89_5b80d59741b844efa802503757147ceb~mv2.png" alt="Aadhaar-Voting header" class="center"></td>
+        <td><h1>Online Voting Powered by Blockchain</h1></td>
+        </tr></table>
+    </header>
+    <form action = "#" method = "POST">
+        <h3>Enter the Voter ID</h3>
+        <p>Must start with <b style="color: rgb(241, 68, 0);">VOID</b> 
+            and followed by three integers
+        <input type="text" name="voterID" required>
+        <br>
+
+        <button type = "submit" value = "new_vote" name="submit">
+            New Vote
+        </button>
+        <button type = "submit" value = "see_chain" name="submit">
+            See Chain
+        </button>
+    </form>
+    <footer>
+        <p>powered by Kumaraguru</p>
+    </footer>
+</body>
+</html>
